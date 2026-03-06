@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Bitcoin Wallet</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/chart.js"></script></head><body><div class="container"><h2>₿ Bitcoin Wallet</h2><button onclick="logout()">Logout</button>
+
+<div class="card"><h3>Your Portfolio</h3><h1 id="balance">0 BTC</h1><h3 id="usdBalance">$0 USD</h3><p>Total wallet value</p></div><div class="card"><h3>Bitcoin Price</h3><h2 id="btcPrice">$0</h2></div><div class="card"><h3>Bitcoin Price Chart</h3><canvas id="btcChart"></canvas>
+
+</div><br><button onclick="sendBTC()">Send Bitcoin</button>
+
+<button onclick="receiveBTC()">Receive Bitcoin</button>
+
+<div class="card"><h3>Your Wallet QR</h3><img id="qrCode" width="200"></div><h3>Transactions</h3><div id="transactions"></div></div><script src="app.js"></script></body></html>
